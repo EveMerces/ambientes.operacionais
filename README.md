@@ -18,15 +18,20 @@ Cada aluno deve realizar suas entregas individualmente.
 
 Cada parte deverá ser feita até a data especificada no cronograma (ver plano de ensino no classroom).
 Edite o documento word ( .doc ) usando o MsOffice ou Google Docs e adicione evidências da conclusão das atividades
-Utilize https://app.diagrams.net para fazer o desenho da arquitetura e a cada parte, atualize o diagrama com a evolução do projeto.
+
+Quando solicitado por um DIAGRAMA, utilize https://app.diagrams.net para fazer o desenho da arquitetura e a cada parte, atualize o diagrama com a evolução do projeto.
+Exemplo: 
+![alt text](https://github.com/gbmaia/ambientes.operacionais/blob/main/img/DrawIO.png?raw=true)
+
+Quando solicitado por EVIDÊNCIAS, tire prints do console da AWS demonstrando a criação e/ou funcionamento do que foi solicitado. 
 
 ## Parte 1 - INFRAESTRUTURA
 
-Este conteúdo foi visto no módulo 05, e parte do que está sendo cobrado já foi realizado no LAB 02.
+> Este conteúdo foi visto no módulo 05 e praticada no LAB 02.
 
 1. Criar uma VPC com as seguintes características:
-    1.1. A VPC deve ter a máscara de sub rede /16 
-    1.2. Utilizando duas zonas de disponibilidade diferentes. 
+   1.1. A VPC deve ter a máscara de sub rede /16 
+   1.2. Utilizando duas zonas de disponibilidade diferentes. 
         1.2.1 Criar Duas subredes pública ( uma em cada zona de disponibilidade )
 	    1.2.2 Criar Duas subredes privadas ( uma em cada zona de disponibilidade )
         1.2.3  Cada sub rede deve ter máscara /24
@@ -37,10 +42,45 @@ Este conteúdo foi visto no módulo 05, e parte do que está sendo cobrado já f
     2.1. Nome: ec2-sg. Deve permitir a conexão SSH e conexão HTTP de qualquer local
     2.2. Nome: bd-sg. Deve permitir a conexão Mysql e PostgreSQL somente se originada desta vpc.
 
-Entregas:
-1. Diagrama detalhando sua estrutura. 
-Utilize https://app.diagrams.net para fazer o desenho da arquitetura de forma que reflita exatamente o que  foi implementado na AWS
-Ex: 
+Entregas - Parte 1:
+    Entrega 1. Diagrama detalhando sua estrutura. 
+    Entrega 2. Evidências da criação da VPC conforme solicitação
+    Entrega 3. Evidências da criação das Sub redes conforme solicitação
+    Entrega 4. Evidências da criação dos Grupos de segurança conforme solicitação
+    Entrega 5. Evidências da liberação das portas nos grupos de segurança conforme solicitação
+
+## Parte 2 - CRIAÇÃO DOS RECURSOS
+
+> Este conteúdo foi em diferentes módulos: 
+>    A parte sobre máquinas EC2 foi vista no módulo 06 e praticada no LAB 03.
+>    A parte sobre Buckets S3 foi vista no módulo 07 e praticada no LAB 04.
+>    A parte sobreBancos RDS foi vista no módulo 08 e praticada no LAB 05.
+
+1. Criar um Bucket S3 com as seguintes características:
+    1.1. Escolha e anote o nome único definido para seu bucket.
+    1.2. Bucket deve permitir acesso público
+    1.3. Bucket deve ser configurado para hospedar um site estático
+
+2. Criar uma instância EC2 com as seguintes características:
+    2.1. Sistema Operacional Amazon Linux
+    2.2. Tipo da instância T3.micro
+    2.3. Ela deve ser colocada na subrede pública da VPC criada na atividade anterior
+    2.4. Atribuia a criação de IP público ou associe um IP elástico à esta máquina.
+    2.5. Associe-o ao grupo de segurança ec2-sg criado na atividade anterior
+
+3. Crie um servidor de banco de dados RDS com as seguintes características:
+    3.1. Tipo Cluster Aurora compatível com postgresql ( ou arrisque-se com mysql )
+    3.1. Modelo DEV/Test
+    3.1. Escola os tipos de instância mais baratos ( família T normalmente )
+    3.1. Defina e anote as informações de conexão ( usuário e senha da instalação )
+    3.1. Ela deve ser colocada na subrede privada da VPC criada na atividade anterior
+    3.1. Associe-o ao grupo de segurança bd-sg criado na atividade anterior
+
+Entregas - Parte 2:
+    Entrega 1. Diagrama atualizado da estrutura. 
+    Entrega 2. Evidências da criação do Bucket S3 conforme solicitação
+    Entrega 3. Evidências da criação da máquina EC2 conforme solicitação
+    Entrega 4. Evidências da criação do servidor RDS conforme solicitação
 
 
 
