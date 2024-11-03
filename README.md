@@ -127,7 +127,36 @@ Entregas - Parte 2:
 
 ## Parte 3 - IMPLEMENTAÇÃO DA SOLUÇÂO
 
-xxx
+> Concluindo as configurações do Bucket S3
+
+1. Edite seu Bucket S3 e em Permissões adicione a seguinte política do bucket:
+
+Troque **NOME_BUCKET** pelo nome do seu bucket:
+
+
+```json
+    {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Effect": "Allow",
+                "Principal": "*",
+                "Action": "s3:GetObject",
+                "Resource": "arn:aws:s3:::NOME_BUCKET/*"
+            }
+        ]
+    }
+```
+
+2. Coloque no bucket o conteúdo da pasta html deste repositório (https://github.com/gbmaia/ambientes.operacionais/tree/main/html)
+
+3. Procure pelo endpoint de site do bucket e abra no seu navegador para testar. Você deve ver a seguinte tela:
+
+![alt text](https://github.com/gbmaia/ambientes.operacionais/blob/main/img/website.png)
+
+![alt text](https://github.com/gbmaia/ambientes.operacionais/blob/main/img/s3.png)
+
+
 
 ## Parte 4 - CONCLUSÃO
 
