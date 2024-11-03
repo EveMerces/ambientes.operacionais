@@ -32,6 +32,7 @@ Exemplo:
 
 ![alt text](https://github.com/gbmaia/ambientes.operacionais/blob/main/img/VPC.png)
 
+-----
 
 ## Parte 1 - INFRAESTRUTURA
 
@@ -70,6 +71,8 @@ Entregas - Parte 1:
     Entrega 4. Evidências da criação dos Grupos de segurança conforme solicitação
 
     Entrega 5. Evidências da liberação das portas nos grupos de segurança conforme solicitação
+
+-----
 
 ## Parte 2 - CRIAÇÃO DOS RECURSOS
 
@@ -124,6 +127,7 @@ Entregas - Parte 2:
 
     Entrega 4. Evidências da criação do servidor RDS conforme solicitação
 
+-----
 
 ## Parte 3 - IMPLEMENTAÇÃO DA SOLUÇÃO
 
@@ -156,7 +160,11 @@ Troque **NOME_BUCKET** pelo nome do seu bucket:
 
 ![alt text](https://github.com/gbmaia/ambientes.operacionais/blob/main/img/s3.png)
 
+-----
+
 > Concluindo as configurações do Bucket EC2
+
+-----
 
 4. Conecte-se na Instância EC2 usando o menu padrão de conexão da AWS.
 
@@ -172,7 +180,11 @@ Exemplo:
 
 Detalhe: Esta ação poderia ter sido otimizada ao incluir este mesmo código em "Dados de Usuário" na criação da máquina EC2.
 
+-----
+
 > Concluindo as configurações do Solução
+
+-----
 
 6. Acesse o endpoint coletado anteriormente ( item 3 ), depois clique em CONFIGURAÇÕES
 
@@ -180,7 +192,11 @@ Detalhe: Esta ação poderia ter sido otimizada ao incluir este mesmo código em
 
 ![alt text](https://github.com/gbmaia/ambientes.operacionais/blob/main/img/configuracao.png)
 
+-----
+
 > Testando a Solução
+
+-----
 
 7. Clique em VOLTAR ou Acesse novamente o endpoint coletado anteriormente ( item 3 ), depois clique em SQL
 
@@ -199,6 +215,7 @@ Entregas - Parte 3:
 
     Entrega 4. Evidências da execução de um código SQL qualquer na tela final da solução.
 
+-----
 
 ## Parte 4 - CONCLUSÃO
 
