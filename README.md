@@ -6,6 +6,8 @@ Utilize o ambiente do curso "AWS Academy Learner Lab" para fazer o trabalho. Nel
 
 Este ambiente persiste até o fechamento do curso.
 
+> Este trabalho foi inspirado no original criado em https://github.com/fesousa/ambientes-operacionais-bd-trabalho
+
 ## Objetivo
 
 Aplicar os conhecimentos adquiridos na disciplina de Ambientes Operacionais, provisionando recursos na AWS dentro de uma VPC e suas subredes públicas e privadas e criando regras de segurança par acesso aos recursos.
