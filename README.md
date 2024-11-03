@@ -2,22 +2,48 @@
 
 Este repositório contém a descrição e códigos necessários para o trabalho aplicado da disciplina de Ambientes Operacionais.
 
-Utilize o ambiente do curso "AWS Academy Learner Lab - Associate Services" para fazer o trabalho. Este ambiente persiste até o fechamento do curso, e fica  disponível aproximadamente 1 ano apos o inicio do semestre, para estudo
+Utilize o ambiente do curso "AWS Academy Learner Lab" para fazer o trabalho. Nele você recebeu 50$ para uso livre da AWS.
+
+Este ambiente persiste até o fechamento do curso.
 
 ## Objetivo
 
 Aplicar os conhecimentos adquiridos na disciplina de Ambientes Operacionais, provisionando recursos na AWS dentro de uma VPC e suas subredes públicas e privadas e criando regras de segurança par acesso aos recursos.
 
-## Grupo
+## Trabalho Individual
 
-O trabalho deve ser feito em **grupos de até 5 alunos**. 
+Cada aluno deve realizar suas entregas individualmente.
 
-## Entrega
+## Entregas
 
-A entrega deverá ser feita até a data especificada no cronograma (ver plano de ensino no classroom). O grupo deverá gravar um vídeo de até **10 minutos** mostrando a solução e entregar uma figura com a arquitetura da solução. Utilize https://app.diagrams.net para fazer o desenho da arquitetura. O vídeo deve mostrar evidências de todas as tarefas descritas a seguir. 
+Cada parte deverá ser feita até a data especificada no cronograma (ver plano de ensino no classroom).
+Edite o documento word ( .doc ) usando o MsOffice ou Google Docs e adicione evidências da conclusão das atividades
+Utilize https://app.diagrams.net para fazer o desenho da arquitetura e a cada parte, atualize o diagrama com a evolução do projeto.
+
+## Parte 1 - INFRAESTRUTURA
+
+Este conteúdo foi visto no módulo 05, e parte do que está sendo cobrado já foi realizado no LAB 02.
+
+1. Criar uma VPC com as seguintes características:
+    1.1. A VPC deve ter a máscara de sub rede /16 
+    1.2. Utilizando duas zonas de disponibilidade diferentes. 
+        1.2.1 Criar Duas subredes pública ( uma em cada zona de disponibilidade )
+	    1.2.2 Criar Duas subredes privadas ( uma em cada zona de disponibilidade )
+        1.2.3  Cada sub rede deve ter máscara /24
+    1.3 A VPC deve conter um NAT Gateway
+    1.4 A VPC deve conter um Internet Gateway
+
+2.    Criar 2 grupos de segurança (SECURITY GROUPS) na VPC criada anteriormente:
+    2.1. Nome: ec2-sg. Deve permitir a conexão SSH e conexão HTTP de qualquer local
+    2.2. Nome: bd-sg. Deve permitir a conexão Mysql e PostgreSQL somente se originada desta vpc.
+
+Entregas:
+1. Diagrama detalhando sua estrutura. 
+Utilize https://app.diagrams.net para fazer o desenho da arquitetura de forma que reflita exatamente o que  foi implementado na AWS
+Ex: 
 
 
-## Tarefas
+
 
 1. Criar uma VPC com as seguintes características:
 
