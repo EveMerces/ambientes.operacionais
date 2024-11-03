@@ -17,13 +17,21 @@ Cada aluno deve realizar suas entregas individualmente.
 ## Entregas
 
 Cada parte deverá ser feita até a data especificada no cronograma (ver plano de ensino no classroom).
+
 Edite o documento word ( .doc ) usando o MsOffice ou Google Docs e adicione evidências da conclusão das atividades
 
 Quando solicitado por um DIAGRAMA, utilize https://app.diagrams.net para fazer o desenho da arquitetura e a cada parte, atualize o diagrama com a evolução do projeto.
+
 Exemplo: 
+
 ![alt text](https://github.com/gbmaia/ambientes.operacionais/blob/main/img/DrawIO.png?raw=true)
 
 Quando solicitado por EVIDÊNCIAS, tire prints do console da AWS demonstrando a criação e/ou funcionamento do que foi solicitado. 
+
+Exemplo:
+
+![alt text](https://github.com/gbmaia/ambientes.operacionais/blob/main/img/VPC.png)
+
 
 ## Parte 1 - INFRAESTRUTURA
 
