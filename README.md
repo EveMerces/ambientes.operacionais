@@ -152,7 +152,7 @@ Troque **NOME_BUCKET** pelo nome do seu bucket:
     }
 ```
 
-2. Coloque no bucket o conteúdo da pasta html deste repositório (https://github.com/gbmaia/ambientes.operacionais/tree/main/html)
+2. Coloque no bucket o conteúdo da pasta html deste repositório https://github.com/gbmaia/ambientes.operacionais/tree/main/html
 
 3. Procure pelo endpoint de site do bucket e abra no seu navegador para testar. Você deve ver a seguinte tela:
 
@@ -170,7 +170,7 @@ Troque **NOME_BUCKET** pelo nome do seu bucket:
 
 ![alt text](https://github.com/gbmaia/ambientes.operacionais/blob/main/img/ec2connect.png)
 
-5. No console copie e cole sem formatação o seguinte código:
+5. No console copie e cole sem formatação o seguinte código e execute-o:
 
 https://github.com/gbmaia/ambientes.operacionais/blob/15b2aabce22043e47ec2903bb56d8b264f8279b3/flask-ec2.sh#L1-L26
 
