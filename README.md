@@ -156,6 +156,23 @@ Troque **NOME_BUCKET** pelo nome do seu bucket:
 
 ![alt text](https://github.com/gbmaia/ambientes.operacionais/blob/main/img/s3.png)
 
+> Concluindo as configurações do Bucket EC2
+
+4. Conecte-se na Instância EC2 usando o menu padrão de conexão da AWS.
+
+![alt text](https://github.com/gbmaia/ambientes.operacionais/blob/main/img/ec2connect.png)
+
+5. No console copie e cole sem formatação o seguinte código:
+
+https://github.com/gbmaia/ambientes.operacionais/blob/15b2aabce22043e47ec2903bb56d8b264f8279b3/flask-ec2.sh#L1-L26
+
+Exemplo:
+
+![alt text](https://github.com/gbmaia/ambientes.operacionais/blob/main/img/ec2.png)
+
+Detalhe: Esta ação poderia ter sido otimizada ao incluir este mesmo código em "Dados de Usuário" na criação da máquina EC2.
+
+
 
 
 ## Parte 4 - CONCLUSÃO
