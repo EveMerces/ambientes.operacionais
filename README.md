@@ -92,13 +92,15 @@ Entregas - Parte 1:
 
     2.2. Tipo da instância T3.micro
 
-    2.3. Ela deve ser colocada na subrede pública da VPC criada na atividade anterior
+    2.3. Par de chaves vockey
 
-    2.4. Atribuia a criação de IP público ou associe um IP elástico à esta máquina.
+    2.4. Ela deve ser colocada na subrede pública da VPC criada na atividade anterior
 
-    2.5. Associe-o ao grupo de segurança ec2-sg criado na atividade anterior
+    2.5. Atribuia a criação de IP público ou associe um IP elástico à esta máquina.
 
-3. Crie um servidor de banco de dados RDS com as seguintes características:
+    2.6. Associe-o ao grupo de segurança ec2-sg criado na atividade anterior
+
+4. Crie um servidor de banco de dados RDS com as seguintes características:
 
     3.1. Tipo Cluster Aurora compatível com postgresql ( ou arrisque-se com mysql )
 
