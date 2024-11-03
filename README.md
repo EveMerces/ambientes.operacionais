@@ -27,26 +27,40 @@ Quando solicitado por EVIDÊNCIAS, tire prints do console da AWS demonstrando a 
 
 ## Parte 1 - INFRAESTRUTURA
 
-> Este conteúdo foi visto no módulo 05 e praticada no LAB 02.
+>Este conteúdo foi visto no módulo 05 e praticada no LAB 02.
 
 1. Criar uma VPC com as seguintes características:
+
    1.1. A VPC deve ter a máscara de sub rede /16 
+
    1.2. Utilizando duas zonas de disponibilidade diferentes. 
-        1.2.1 Criar Duas subredes pública ( uma em cada zona de disponibilidade )
-	    1.2.2 Criar Duas subredes privadas ( uma em cada zona de disponibilidade )
-        1.2.3  Cada sub rede deve ter máscara /24
+
+	1.2.1 Criar Duas subredes pública ( uma em cada zona de disponibilidade )
+
+   	1.2.2 Criar Duas subredes privadas ( uma em cada zona de disponibilidade )
+   
+   	1.2.3  Cada sub rede deve ter máscara /24
+
     1.3 A VPC deve conter um NAT Gateway
+
     1.4 A VPC deve conter um Internet Gateway
 
-2.    Criar 2 grupos de segurança (SECURITY GROUPS) na VPC criada anteriormente:
+2. Criar 2 grupos de segurança (SECURITY GROUPS) na VPC criada anteriormente:
+
     2.1. Nome: ec2-sg. Deve permitir a conexão SSH e conexão HTTP de qualquer local
+ 
     2.2. Nome: bd-sg. Deve permitir a conexão Mysql e PostgreSQL somente se originada desta vpc.
 
 Entregas - Parte 1:
+    
     Entrega 1. Diagrama detalhando sua estrutura. 
+    
     Entrega 2. Evidências da criação da VPC conforme solicitação
+    
     Entrega 3. Evidências da criação das Sub redes conforme solicitação
+    
     Entrega 4. Evidências da criação dos Grupos de segurança conforme solicitação
+
     Entrega 5. Evidências da liberação das portas nos grupos de segurança conforme solicitação
 
 ## Parte 2 - CRIAÇÃO DOS RECURSOS
@@ -57,33 +71,57 @@ Entregas - Parte 1:
 >    A parte sobreBancos RDS foi vista no módulo 08 e praticada no LAB 05.
 
 1. Criar um Bucket S3 com as seguintes características:
+
     1.1. Escolha e anote o nome único definido para seu bucket.
+
     1.2. Bucket deve permitir acesso público
+
     1.3. Bucket deve ser configurado para hospedar um site estático
 
 2. Criar uma instância EC2 com as seguintes características:
+
     2.1. Sistema Operacional Amazon Linux
+
     2.2. Tipo da instância T3.micro
+
     2.3. Ela deve ser colocada na subrede pública da VPC criada na atividade anterior
+
     2.4. Atribuia a criação de IP público ou associe um IP elástico à esta máquina.
+
     2.5. Associe-o ao grupo de segurança ec2-sg criado na atividade anterior
 
 3. Crie um servidor de banco de dados RDS com as seguintes características:
+
     3.1. Tipo Cluster Aurora compatível com postgresql ( ou arrisque-se com mysql )
-    3.1. Modelo DEV/Test
-    3.1. Escola os tipos de instância mais baratos ( família T normalmente )
-    3.1. Defina e anote as informações de conexão ( usuário e senha da instalação )
-    3.1. Ela deve ser colocada na subrede privada da VPC criada na atividade anterior
-    3.1. Associe-o ao grupo de segurança bd-sg criado na atividade anterior
+
+    3.2. Modelo DEV/Test
+
+    3.3. Escola os tipos de instância mais baratos ( família T normalmente )
+
+    3.4. Defina e anote as informações de conexão ( usuário e senha da instalação )
+
+    3.5. Ela deve ser colocada na subrede privada da VPC criada na atividade anterior
+
+    3.6. Associe-o ao grupo de segurança bd-sg criado na atividade anterior
 
 Entregas - Parte 2:
+    
     Entrega 1. Diagrama atualizado da estrutura. 
+    
     Entrega 2. Evidências da criação do Bucket S3 conforme solicitação
+    
     Entrega 3. Evidências da criação da máquina EC2 conforme solicitação
+
     Entrega 4. Evidências da criação do servidor RDS conforme solicitação
 
 
+## Parte 3 - IMPLEMENTAÇÃO DA SOLUÇÂO
 
+xxx
+
+## Parte 4 - CONCLUSÃO
+
+xxx
 
 1. Criar uma VPC com as seguintes características:
 
