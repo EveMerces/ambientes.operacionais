@@ -125,7 +125,7 @@ Entregas - Parte 2:
     Entrega 4. Evidências da criação do servidor RDS conforme solicitação
 
 
-## Parte 3 - IMPLEMENTAÇÃO DA SOLUÇÂO
+## Parte 3 - IMPLEMENTAÇÃO DA SOLUÇÃO
 
 > Concluindo as configurações do Bucket S3
 
@@ -171,6 +171,23 @@ Exemplo:
 ![alt text](https://github.com/gbmaia/ambientes.operacionais/blob/main/img/ec2.png)
 
 Detalhe: Esta ação poderia ter sido otimizada ao incluir este mesmo código em "Dados de Usuário" na criação da máquina EC2.
+
+> Concluindo as configurações do Solução
+
+6. Acesse o endpoint coletado anteriormente ( item 3 ), depois clique em CONFIGURAÇÕES
+
+6.1. Inclua seus dados de configuração:
+
+![alt text](https://github.com/gbmaia/ambientes.operacionais/blob/main/img/configuracao.png)
+
+> Testando a Solução
+
+7. Clique em VOLTAR ou Acesse novamente o endpoint coletado anteriormente ( item 3 ), depois clique em SQL
+
+7.1. Inclua um código SQL que será executado em seu servidor RDS e depois clique em EXECUTAR:
+
+![alt text](https://github.com/gbmaia/ambientes.operacionais/blob/main/img/testes.png)
+
 
 
 
