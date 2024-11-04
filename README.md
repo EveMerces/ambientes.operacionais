@@ -196,7 +196,7 @@ Detalhe: Esta ação poderia ter sido otimizada ao incluir este mesmo código em
 
 6. Acesse o endpoint coletado anteriormente ( item 3 ), depois clique em CONFIGURAÇÕES
 
-    6.1. Inclua seus dados de configuração:
+    6.1. Inclua seus dados de configuração ( opção padrão para banco de dados = postgres ):
 
 ![alt text](https://github.com/gbmaia/ambientes.operacionais/blob/main/img/configuracao.png)
 
