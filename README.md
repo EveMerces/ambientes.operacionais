@@ -172,7 +172,13 @@ Troque **NOME_BUCKET** pelo nome do seu bucket:
 
 ![alt text](https://github.com/gbmaia/ambientes.operacionais/blob/main/img/ec2connect.png)
 
-5. No console copie e cole sem formatação o seguinte código e execute-o:
+5. No console digite os seguintes comandos ( para poder utilizar os direitos de administrador ):
+
+```json
+   sudo su
+```
+
+   5.1. Depois copie e cole sem formatação o seguinte código e execute-o:
 
 https://github.com/gbmaia/ambientes.operacionais/blob/15b2aabce22043e47ec2903bb56d8b264f8279b3/flask-ec2.sh#L1-L26
 
