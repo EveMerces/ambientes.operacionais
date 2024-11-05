@@ -115,7 +115,7 @@ Entregas - Parte 1:
 
     3.4. Defina e anote as informações de conexão ( usuário e senha da instalação )
 
-    3.5. Ela deve ser colocada na subrede privada da VPC criada na atividade anterior
+    3.5. Ela deve ser colocada na VPC criada na atividade anterior
 
     3.6. Associe-o ao grupo de segurança bd-sg criado na atividade anterior
 
